@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vmahsi Krishna - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5362be6e92.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="afterclick()">Home</a></li>
+                    <li><a href="#about" onclick="afterclick()">About</a></li>
+                    <li><a href="#services" onclick="afterclick()">Services</a></li>
+                    <li><a href="#projects" onclick="afterclick()">Projects</a></li>
+                    <li><a href="#contact" onclick="afterclick()">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Vamshi</span><br>Krishna From Hyderbad, India.</h1>
+                <p>- Software Engineer<span>.</span></p>
+            </div>
+        </div>
+    </div>
+
+<!--------------------------------------------------------------------about---------------------------------------------------------------->
+    <div id = "about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p class="about-info">I am an enthusiastic computer science under graduate 
+                        looking for internship/job in challenging advanced 
+                        technologies and in a competitive environment that 
+                        will challenge me to push my boundaries and expand 
+                        my knowledge in the field of computer science while 
+                        allowing me to add value to the dynamics of the company.
+                        Here is my LinkedIn profile (<a href="https://www.linkedin.com/in/vamshi-krishna-k-639515234?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJHDT5oTqSoSCzQE3wvoC2w%3D%3D" target="_blank">My Profile LINK)</a>, 
+                        Do check out my Profile. Hope you give me an oppertunity where, I can use my skills
+                        and grow with your firm, Thank You.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages</span><br><br>JAVA <br>PYTHON <br>C <br>C++ <br>JAVASCRIPT <br>C# .NET</br></li>
+                                <li><span>Database</span><br><br>SQL</br></li>
+                                <li><span>Android App Development</span><br><br>FLUTTER <br>KOTLIN</br></li>
+                                <li><span>Web Development</span><br><br>STATIC WEB PAGES<br>DYNAMIC WEB PAGES<br>JFULL STACK</br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>NOV[2020] - MAY[2021]</span><br><br>Intern [Sandwich Diploma Apprentice] as research and development software engineer. <br> ECIL, HYD, INDIA.</br></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br><br>Gokaraju Rangaraju Institute of Engineering and Technology | BTech [CSE]<br>Currently Pursuing</br></li>
+                                <li><span>2021</span><br><br>Government Institute Of Electronics | Diploma <br>Percentage: 80.32%</br></li>
+                                <li><span>2017</span><br><br>St. Patrick's High School | 10Th <br>GPA: 8.3</br></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------------------------------------------------services----------------------------------------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"><span>My </span>Services</h1>
+            <div class="services-lis">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I'm capable of developing static, dynamic and full stack wesites and webpages using HTML, CSS and JAVAscript. To know more about Web development please follow the given link below.</p>
+                        <a href="https://www.w3schools.com/whatis/" target="_blank">Learn more</a>
+                    </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Android App Development</h2>
+                    <p>I'm capable of developing android app's which are dynamic and fully fuctional using KOTLIN. To know more about Android app development please follow the given link below.</p>
+                        <a href="https://www.w3schools.com/KOTLIN/index.php" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-apple"></i>
+                    <h2>iOS App Development</h2>
+                    <p>I'm capable of developing iOS applications which are dynamic and fully fuctional using FLUTTER. To know more about iOS app development please follow the given link below.</p>
+                        <a href="https://www.tutorialspoint.com/flutter/index.htm" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- ----------------------------------------------------------------projects---------------------------------------------------------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title"><span>My </span> Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" alt="">
+                        <div class="layer">
+                            <h3>New Portal App</h3>
+                            <p>This application allows you to view news from over 
+                            30,000 news sources. You can read a short 
+                            summary of the article in the application.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="">
+                    <div class="layer">
+                        <h3>Blog Site</h3>
+                        <p>This my personal blogging website in which i can write blogs and publist them on this website. 
+                            This website also gives my personal information through which you can coontact me dorectly.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                        </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- ----------------------------------------------------------contact form-------------------------------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact <span>Me</span></h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>vamshi.k2001@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8688968266</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vamshi-krishna-k-639515234/" target="_blank"><i class="fa-brands fa-linkedin"></i> </a>
+                        <a href="https://www.instagram.com/k.vamshi_krishna_/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/vamshi_kurakula" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    </div>
+                    <a href="images/RESUME22.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Nmae" required>
+                        <input type="text" name="Email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-circle-arrow-up" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+        <div class="copyright">
+            <p>Copyright © 2022 Vamshi Krishna Kurakula | All rights reserved. </i></p> 
+        </div>
+    </div>
+
+    <!---------------------------------------------------------------------- Js Code ------------------------------------------------------------ -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+        function afterclick() {
+            sidemenu.style.right="-200px";
+        };
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyYX5FASNxcySGVvnMdxbfZYuaFLjsSD0tpQp8PPoUouGCqYBj3Wty_3YL9u6k5WS3IPg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },2000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+</body>
+</html>
